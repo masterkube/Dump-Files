@@ -9,3 +9,4 @@ docker run -d --restart=always -p 8000:8080 --net axon-net --link mysqldoc --nam
 docker run -d --restart=always -p 83:80 --name proxy masterkube/proxy:1.0
 #docker run -d --restart=always --name supplychain -p 85:80 masterkube/supplychain:2.0
 docker run -d -p 5000:5000 --restart=always -v /home/ec2-user/DataType-Uploads:/app/uploads --name file_api masterkube/datatype:1.0
+docker run -d -p 5001:5000 --restart=always -v /home/ec2-user/DataType-Uploads_1:/app/uploads --name file_api_1 masterkube/datatype:1.0
